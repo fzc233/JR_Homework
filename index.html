@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>body { background: rgb(204, 203, 203); }</style>
+
+</head>
+<body>
+  <form id="signupForm">
+    <h2>Sign Up</h2>
+
+    <fieldset>
+      <legend>🟢 Your basic info</legend>
+      <label>First Name:<input type="text" name="firstName" required></label>
+      <label>Last Name:<input type="text" name="lastName" required></label>
+      <label>Email:<input type="email" name="email" required></label>
+      <label>Password:<input type="password" name="password" required minlength="6"></label>
+      <label>Confirm Password:<input type="password" name="confirmPassword" required minlength="6"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>🟢 Other details</legend>
+      <label>Date of Birth:<input type="date" name="dob" required></label>
+
+      <label>Gender:</label>
+      <label><input type="radio" name="gender" value="Male" required> Male</label>
+      <label><input type="radio" name="gender" value="Female"> Female</label>
+      <label><input type="radio" name="gender" value="Other"> Other</label>
+
+      <label>About Me:
+        <textarea name="about" rows="4" placeholder="Tell us something about you..."></textarea>
+      </label>
+
+      <label>Choose Your Profession:
+        <select name="profession" required>
+          <option value="">--Select--</option>
+          <option value="Web Development">Web Development</option>
+          <option value="Data Analytics">Data Analytics</option>
+          <option value="UI/UX Design">UI/UX Design</option>
+          <option value="UI/UX Design">Full stack Development</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <label>
+      <input type="checkbox" required> I'm accepting Terms and Conditions
+    </label>
+
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
